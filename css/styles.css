@@ -195,3 +195,47 @@ figure {
 .about > p {
   margin: 0;
 }
+
+/* Media query medium browser */
+
+@media (min-width: 768px) {
+  .site-nav {
+    width: 0;
+    position: fixed relative;
+    top: 0;
+    right: 0;
+  }
+
+  .site-nav-item {
+    float: none;
+
+  }
+
+  .site-nav-list {
+    margin: 80px 0 0 10px
+  }
+
+  .site-logo {
+    position: fixed absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .movie {
+    margin-left: 85px;
+  }
+
+  .movie-overview {
+    display: block;
+  }
+
+  .site-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-nav {
+    background-color: #333333;
+    color: #ffffff;
+  }
+}
