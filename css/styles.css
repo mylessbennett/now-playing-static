@@ -239,3 +239,30 @@ figure {
     color: #ffffff;
   }
 }
+
+/* Media query large browser */
+
+@media (min-width: 992px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .movie:first-child {
+    grid-column: 1 / 4;
+  }
+
+  .movie:first-child .movie-overview {
+    display: block;
+  }
+
+  .movie-image {
+    margin-left: 0;
+  }
+
+  .movie-overview {
+    display: none;
+  }
+
+}
